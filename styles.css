@@ -1,0 +1,125 @@
+html,
+body {
+  font-size: 10px;
+  color: white;
+  background: linear-gradient(100deg, #ff8e9a 52.6%, #eed65c 100%);
+  font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none; /*hiding scrollbar for some browsers "couldn't do it for chrome tho :( "*/
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+#text {
+  position: absolute;
+  top: 2vh;
+  left: 20px;
+  transform: translate(0, -5%);
+  font-size: 4rem;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0 0 15px 15px;
+  background-color: #f77582;
+  z-index: 999;
+}
+
+.nav {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 500;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#sec1 {
+  right: 0;
+}
+#sec2 {
+  right: 8%;
+}
+#sec3 {
+  right: 16%;
+}
+#sec4 {
+  right: 24%;
+}
+
+.div {
+  height: 50vh;
+  width: 50%;
+  position: absolute;
+}
+#customDiv1 {
+  top: 15vh; // giving the div some white space from the header div
+}
+
+#customDiv2 {
+  top: 67vh; // 50vh "div height" + previous space from header + 2vh white space between div 1 and div 2
+}
+
+#customDiv3 {
+  top: 119%; // each div's top is previous div's top + 52 height and white space
+}
+
+#customDiv4 {
+  top: 171vh;
+}
+
+.circles {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f77582;
+  right: 2vw;
+  cursor: pointer;
+}
+
+#circle1 {
+  top: 18vh;
+}
+.circles:hover {
+  background-color: #c0505b;
+}
+#circle2 {
+  top: 70vh;
+}
+
+#circle3 {
+  top: 122vh;
+}
+
+#circle4 {
+  top: 174vh;
+}
+
+h3 {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #eed65c;
+}
+
+#footer {
+  height: 70px;
+  width: 100%;
+  background-color: #c0505b;
+  position: absolute;
+  top: 250vh;
+  left: 0;
+}
+#footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 1.5rem;
+}
